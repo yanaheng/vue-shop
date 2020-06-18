@@ -71,9 +71,9 @@ export default {
   },
   created() {
     this.getMenuList()
-    this.activePath = window.sessionStorage.getItem('activePath')
-    const currentPath = this.$router.history.current.fullPath
-    if (currentPath !== this.activePath) this.$router.push(this.activePath)
+    // this.activePath = window.sessionStorage.getItem('activePath')
+    // const currentPath = this.$router.history.current.fullPath
+    // if (currentPath !== this.activePath) this.$router.push(this.activePath)
   },
   methods: {
     logout() {
