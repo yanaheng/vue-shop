@@ -5,7 +5,7 @@
       <el-breadcrumb-item>用户管理</el-breadcrumb-item>
       <el-breadcrumb-item>用户列表</el-breadcrumb-item>
     </el-breadcrumb>
-    <el-card class="box-card">
+    <el-card>
       <!-- 搜索 添加 -->
       <el-row :gutter="20">
         <el-col :span="8">
@@ -14,6 +14,7 @@
             placeholder="请输入内容"
             class="input-with-select"
             v-model="queryInfo.query"
+            @clear="getUserList"
           >
             <el-button
               slot="append"
